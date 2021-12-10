@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Storage;
 */
 
 Route::get('/', function () {
-    $fileUrl = Storage::url('public/track.mp3');
+    $fileUrl = Storage::url('public/carti.mp3');
     //dd($fileUrl);
     return view('welcome')->with('fileUrl', $fileUrl);
 });
