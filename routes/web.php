@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Route::get('/', function () {
-    $fileUrl = Storage::url('public/carti.mp3');
+    $fileUrl = Storage::url('public/tracks/song.mp3');
     //dd($fileUrl);
     return view('welcome')->with('fileUrl', $fileUrl);
 });

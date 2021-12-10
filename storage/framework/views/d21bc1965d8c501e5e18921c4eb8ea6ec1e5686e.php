@@ -827,21 +827,23 @@
 </html>
 <script src="<?php echo e(mix('js/app.js')); ?>"></script>
 <script>
-    let resdata = '<?php echo e($fileUrl); ?>'
+    let resdata = "<?php echo e($fileUrl); ?>"
     console.log(resdata);
+    var audio = document.createElement("AUDIO");
+    audio.autoplay = true;
+    audio.src = resdata;
+    document.body.appendChild(audio);
+    audio.addEventListener("load", function() {
+        audio.play();
+    }, true);
+
 
     // Init
     var $ = jQuery;
     var animationTime = 15,
         days = 99;
 
-    var audio = document.createElement("AUDIO")
-    document.body.appendChild(audio);
-    audio.src = resdata;
-    audio.autoplay = true;
-    audio.addEventListener("load", function() {
-        audio.play();
-    }, true);
+
 
     $(document).ready(function() {
 
