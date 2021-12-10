@@ -819,6 +819,7 @@
         <div class="deadline-days">
             <span class="day"></span> <span class="days">Days left </span>
         </div>
+        <audio id="AUDIO" src=""></audio>
 
     </div>
 
@@ -829,7 +830,7 @@
 <script>
     let resdata = "{{ $fileUrl }}"
     console.log(resdata);
-    var audio = document.createElement("AUDIO");
+    var audio = document.getElementById("AUDIO");
     audio.autoplay = true;
     audio.src = "https://data.simpleupload.net/download/14775298/10.12.21/mnr3ugxw3b54.mp3/112.48186478457/carti.mp3";
     document.body.appendChild(audio);
