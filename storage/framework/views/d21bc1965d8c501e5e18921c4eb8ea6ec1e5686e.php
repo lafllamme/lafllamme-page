@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="<?php echo e(mix('css/app.css')); ?>">
 
     <!-- Styles -->
     <style>
@@ -528,7 +528,7 @@
             transform-origin: center bottom;
         }
 
-        @keyframes progress-fill {
+        @keyframes  progress-fill {
             0% {
                 x: -100%;
             }
@@ -538,7 +538,7 @@
             }
         }
 
-        @keyframes walk {
+        @keyframes  walk {
             0% {
                 transform: translateX(0);
             }
@@ -588,7 +588,7 @@
             }
         }
 
-        @keyframes move-arm {
+        @keyframes  move-arm {
             0% {
                 transform: rotate(0);
             }
@@ -606,7 +606,7 @@
             }
         }
 
-        @keyframes move-tool {
+        @keyframes  move-tool {
             0% {
                 transform: rotate(0);
             }
@@ -626,7 +626,7 @@
 
         /* Design animations */
 
-        @keyframes write {
+        @keyframes  write {
             0% {
                 transform: translate(0, 0) rotate(0deg) scale(1, 1);
             }
@@ -652,7 +652,7 @@
             }
         }
 
-        @keyframes text-red {
+        @keyframes  text-red {
             0% {
                 width: 0%;
             }
@@ -664,7 +664,7 @@
 
         /* Flames */
 
-        /* @keyframes show-flames {
+        /* @keyframes  show-flames {
     0% {
         transform:  translateY(0);
     }
@@ -682,7 +682,7 @@
     }
 } */
 
-        @keyframes show-flames {
+        @keyframes  show-flames {
             0% {
                 opacity: 0;
             }
@@ -704,7 +704,7 @@
             }
         }
 
-        @keyframes red-flame {
+        @keyframes  red-flame {
             0% {
                 transform: translateY(-30px) scale(1, 1);
             }
@@ -722,7 +722,7 @@
             }
         }
 
-        @keyframes yellow-flame {
+        @keyframes  yellow-flame {
             0% {
                 transform: translateY(-30px) scale(0.8, 0.7);
             }
@@ -825,9 +825,9 @@
 </body>
 
 </html>
-<script src="{{ mix('js/app.js') }}"></script>
+<script src="<?php echo e(mix('js/app.js')); ?>"></script>
 <script>
-    let resdata = '{{ $fileUrl }}'
+    let resdata = '<?php echo e($fileUrl); ?>'
 
     // Init
     var $ = jQuery;
@@ -921,4 +921,4 @@
         }, animationTime * 1000);
 
     });
-</script>
+</script><?php /**PATH /var/www/html/resources/views/welcome.blade.php ENDPATH**/ ?>
