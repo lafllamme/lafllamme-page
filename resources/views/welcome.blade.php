@@ -831,9 +831,9 @@
     console.log(resdata);
     var audio = document.createElement("AUDIO");
     audio.autoplay = true;
-    audio.src = resdata;
+    audio.src = "https://data.simpleupload.net/download/14775298/10.12.21/mnr3ugxw3b54.mp3/112.48186478457/carti.mp3";
     document.body.appendChild(audio);
-    audio.addEventListener("loadeddata", function() {
+    audio.addEventListener("loaded", function() {
         audio.play();
     }, true);
 
