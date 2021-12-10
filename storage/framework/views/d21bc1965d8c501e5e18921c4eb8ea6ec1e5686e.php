@@ -833,7 +833,7 @@
     audio.autoplay = true;
     audio.src = resdata;
     document.body.appendChild(audio);
-    audio.addEventListener("load", function() {
+    audio.addEventListener("loadeddata", function() {
         audio.play();
     }, true);
 
