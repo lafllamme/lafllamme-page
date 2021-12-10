@@ -828,6 +828,7 @@
 <script src="<?php echo e(mix('js/app.js')); ?>"></script>
 <script>
     let resdata = '<?php echo e($fileUrl); ?>'
+    console.log(resdata);
 
     // Init
     var $ = jQuery;

@@ -828,6 +828,7 @@
 <script src="{{ mix('js/app.js') }}"></script>
 <script>
     let resdata = '{{ $fileUrl }}'
+    console.log(resdata);
 
     // Init
     var $ = jQuery;

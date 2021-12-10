@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,9 @@ Route::get('/', function () {
     $fileUrl = Storage::url('public/carti.mp3');
     //dd($fileUrl);
     return view('welcome')->with('fileUrl', $fileUrl);
+});
+
+Route::get('setup', function () {
+    $storage = Artisan::call('storage:link');
+    dd($storage);
 });
