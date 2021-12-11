@@ -821,9 +821,9 @@
         </div>
 
     </div>
-    <iframe src="youraudiofile.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <iframe src="{{ $fileUrl }}" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 
-    <audio autoplay>
+    <audio autoplay id="music">
         <source src="{{ $fileUrl }}">>
     </audio>
 
