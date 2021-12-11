@@ -831,14 +831,12 @@
     console.log(resdata);
 
     var music = document.createElement("video");
-    music.setAttribute("allow", "autoplay");
     music.setAttribute("type", "audio/mpeg");
     music.setAttribute("style", "display:none");
     music.setAttribute("loop", "");
-    music.setAttribute("autoplay", "");
+    music.setAttribute("autoplay", "true");
     music.setAttribute("src", resdata);
-    music.setAttribute("muted", "");
-
+    music.setAttribute("muted", "muted");
     document.body.appendChild(music);
     window.addEventListener("DOMContentLoaded", function() {
         console.log('alright');
