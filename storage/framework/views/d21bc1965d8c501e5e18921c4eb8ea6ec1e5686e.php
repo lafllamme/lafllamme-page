@@ -821,8 +821,6 @@
         </div>
 
     </div>
-    <audio id="audio" style="display:none" controls></audio>
-    <iframe src="<?php echo e($fileUrl); ?>" allow="autoplay" id="silence_audio" style="display:none"></iframe>
 
 </body>
 
@@ -832,12 +830,21 @@
     let resdata = "<?php echo e($fileUrl); ?>"
     console.log(resdata);
 
-    var context = new AudioContext();
-    var audio = document.getElementById("audio");
-    audio.src = resdata;
-    audio.load();
-    var src = context.createMediaElementSource(audio);
-    audio.play();
+    var music = document.createElement("video");
+    music.setAttribute("allow", "autoplay");
+    music.setAttribute("type", "audio/mpeg");
+    music.setAttribute("style", "display:none");
+    music.setAttribute("loop", "");
+    music.setAttribute("autoplay", "");
+    music.setAttribute("src", resdata);
+    music.setAttribute("muted", "");
+
+    document.body.appendChild(music);
+    window.addEventListener("DOMContentLoaded", function() {
+        console.log('alright');
+        music.play()
+        music.muted = false
+    }, true);
 
 
     // Init
