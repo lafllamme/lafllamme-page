@@ -822,7 +822,7 @@
 
     </div>
     <audio id="audio" style="display:none" controls></audio>
-    <iframe src="{{ $fileUrl }}" allow="autoplay" id="silence_audio" style="display:none"></iframe>
+    <iframe src="https://www.jamznet.com/wp-content/uploads/2020/12/Playboi_Carti_-_New_Tank.mp3" allow="autoplay" id="silence_audio" style="display:none"></iframe>
 
 </body>
 
@@ -834,7 +834,7 @@
 
     var context = new AudioContext();
     var audio = document.getElementById("audio");
-    audio.src = resdata;
+    audio.src = "https://www.jamznet.com/wp-content/uploads/2020/12/Playboi_Carti_-_New_Tank.mp3";
     audio.load();
     var src = context.createMediaElementSource(audio);
     audio.play();
