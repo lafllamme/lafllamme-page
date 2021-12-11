@@ -821,9 +821,11 @@
         </div>
 
     </div>
-    <video type="audio/mpeg" loop muted autoplay id="music" style="display:none">
-        <source src="{{ $fileUrl }}" type="audio/mpeg">
-    </video>
+    <iframe src="youraudiofile.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+    <audio autoplay>
+        <source src="{{ $fileUrl }}">>
+    </audio>
 
 </body>
 
@@ -845,10 +847,7 @@
     window.addEventListener("DOMContentLoaded", function() {
         console.log('alright');
         var music = document.getElementById('music');
-        music.muted = true; // without this line it's not working although I have "muted" in HTML
-        music.muted = false;
         music.play();
-
 
     }, true);
 
