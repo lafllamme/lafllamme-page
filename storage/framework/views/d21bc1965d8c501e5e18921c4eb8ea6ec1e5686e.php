@@ -821,6 +821,9 @@
         </div>
 
     </div>
+    <video type="audio/mpeg" loop muted autoplay id="music" style="display:none">
+        <source src="<?php echo e($fileUrl); ?>" type="audio/mpeg">
+    </video>
 
 </body>
 
@@ -830,19 +833,22 @@
     let resdata = "<?php echo e($fileUrl); ?>"
     console.log(resdata);
 
-    var music = document.createElement("video");
-    music.setAttribute("type", "audio/mpeg");
-    music.setAttribute("style", "display:none");
-    music.setAttribute("loop", "");
-    music.setAttribute("autoplay", "true");
-    music.setAttribute("src", resdata);
-    music.setAttribute("muted", "muted");
+    // var music = document.createElement("video");
+    // music.setAttribute("allow", "autoplay");
+    // music.setAttribute("type", "audio/mpeg");
+    // music.setAttribute("style", "display:none");
+    // music.setAttribute("loop", "");
+    // music.setAttribute("autoplay", "");
+    // music.setAttribute("src", resdata);
+    // document.body.appendChild(music);
 
-    document.body.appendChild(music);
     window.addEventListener("DOMContentLoaded", function() {
         console.log('alright');
-        music.play()
-        music.muted = false
+        var music = document.getElementById('music');
+        music.muted = true; // without this line it's not working although I have "muted" in HTML
+        music.play();
+        music.muted = false;
+
     }, true);
 
 
