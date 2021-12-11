@@ -821,11 +821,11 @@
         </div>
 
     </div>
-    <iframe src="{{ $fileUrl }}" allow="autoplay" style="display:none" id="iframeAudio">
+    <iframe src="{{ $fileUrl2  }}" allow="autoplay" id="audio" style="display: none"></iframe>
     </iframe>
-    <audio autoplay id="playAudio">
-        <source src="{{ $fileUrl }}">>
-    </audio>
+    <audio id="player" autoplay loop>
+    <source src="{{ $fileUrl }}" type="audio/mp3">
+</audio>
 
 </body>
 

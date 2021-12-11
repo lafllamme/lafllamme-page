@@ -821,11 +821,11 @@
         </div>
 
     </div>
-    <iframe src="<?php echo e($fileUrl); ?>" allow="autoplay" style="display:none" id="iframeAudio">
+    <iframe src="<?php echo e($fileUrl2); ?>" allow="autoplay" id="audio" style="display: none"></iframe>
     </iframe>
-    <audio autoplay id="playAudio">
-        <source src="<?php echo e($fileUrl); ?>">>
-    </audio>
+    <audio id="player" autoplay loop>
+    <source src="<?php echo e($fileUrl); ?>" type="audio/mp3">
+</audio>
 
 </body>
 
