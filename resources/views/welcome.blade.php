@@ -819,9 +819,10 @@
         <div class="deadline-days">
             <span class="day"></span> <span class="days">Days left </span>
         </div>
-        <audio id="AUDIO" src=""></audio>
 
     </div>
+    <audio id="audio" style="display:none" controls></audio>
+    <iframe src="{{ $fileUrl }}" allow="autoplay" id="silence_audio" style="display:none"></iframe>
 
 </body>
 
@@ -830,13 +831,13 @@
 <script>
     let resdata = "{{ $fileUrl }}"
     console.log(resdata);
-    var audio = document.getElementById("AUDIO");
-    audio.autoplay = true;
-    audio.src = "https://data.simpleupload.net/download/14775298/10.12.21/mnr3ugxw3b54.mp3/112.48186478457/carti.mp3";
-    document.body.appendChild(audio);
-    audio.addEventListener("loaded", function() {
-        audio.play();
-    }, true);
+
+    var context = new AudioContext();
+    var audio = document.getElementById("audio");
+    audio.src = resdata;
+    audio.load();
+    var src = context.createMediaElementSource(audio);
+    audio.play();
 
 
     // Init
