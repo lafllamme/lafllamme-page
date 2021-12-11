@@ -846,8 +846,9 @@
         console.log('alright');
         var music = document.getElementById('music');
         music.muted = true; // without this line it's not working although I have "muted" in HTML
-        music.play();
         music.muted = false;
+        music.play();
+
 
     }, true);
 
