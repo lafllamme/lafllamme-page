@@ -16,11 +16,11 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Route::get('/', function () {
+    $storage = Artisan::call('storage:link');
     $fileUrl = Storage::url('public/tracks/song.mp3');
-    $fileUrl2 = Storage::url('public/tracks/silence.mp3');
 
     //dd($fileUrl);
-    return view('welcome')->with('fileUrl', $fileUrl)->with('fileUrl2', $fileUrl2);
+    return view('welcome')->with('fileUrl', $fileUrl);
 });
 
 Route::get('setup', function () {
