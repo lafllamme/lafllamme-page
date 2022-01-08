@@ -48,7 +48,7 @@
             width: 100%;
             height: 100%;
             animation: firelight 2s ease infinite;
-            background: radial-gradient(ellipse at bottom, rgba(255, 193, 7, 0.15) 0%, rgba(255, 193, 7, 0) 90%);
+            background: radial-gradient(ellipse at bottom, rgb(228 31 158) 0%, rgb(206 222 200 / 0%) 90%);
             position: fixed;
             z-index: 1;
             bottom: 0;
@@ -342,15 +342,17 @@
 
         #text {
             position: absolute;
-            top: 50%;
+            top: 13%;
             left: 50%;
             font-size: 4.5em;
             font-family: 'MyWebFont';
             text-align: center;
-            color: white;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             white-space: nowrap;
+            background: -webkit-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
 
         }
@@ -451,6 +453,10 @@
     document.body.addEventListener("click", function() {
         audio.play();
     })
+    document.addEventListener("scroll", function() {
+        audio.play();
+    })
+
 
 
 
