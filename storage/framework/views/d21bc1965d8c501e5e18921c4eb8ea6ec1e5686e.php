@@ -344,7 +344,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            font-size: 5.5em;
+            font-size: 4.5em;
             font-family: 'MyWebFont';
             text-align: center;
             color: white;
@@ -446,7 +446,7 @@
         const audioPlayer = document.getElementById("audio");
         audio.play();
     }
-    const body = document.getElementById("body");
+    const body = document.getElementById("overlay");
     body.addEventListener('click', play());
     body.addEventListener('scroll', play());
     body.addEventListener('click', play());
