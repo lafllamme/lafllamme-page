@@ -403,7 +403,8 @@
     </div>
     <p>
         TAPE DROP$<br>VERY SOON.
-        <span class="author">Lafllamme, Days Before Romeo</span>
+        <!--         <span class="author">Lafllamme, Days Before Romeo</span>
+ -->
     </p>
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
@@ -421,10 +422,13 @@
 </html>
 <script src="<?php echo e(mix('js/app.js')); ?>"></script>
 <script>
+    let resdata = "<?php echo e($fileUrl); ?>";
     var flag = false;
+
     setInterval(function() {
         console.log(flag)
     }, 100)
+
     setTimeout(function() {
         flag = true;
     }, 4000);
@@ -440,25 +444,14 @@
             document.getElementById("overlay").style.display = "none";
         }
     }
-    let resdata = "<?php echo e($fileUrl); ?>"
-    console.log(resdata);
-    const play = () => {
-        const audioPlayer = document.getElementById("audio");
+
+    //const body = document.getElementById("body");
+    const audio = document.getElementById("audio");
+
+    document.body.addEventListener("click", function() {
         audio.play();
-    }
-    const body = document.getElementById("overlay");
-    body.addEventListener('click', play());
-    body.addEventListener('scroll', play());
-    body.addEventListener('click', play());
+    })
 
-    const startup = () => {
-        body.addEventListener("touchstart", play());
-        body.addEventListener("touchend", play());
-        body.addEventListener("touchcancel", play());
-        body.addEventListener("touchmove", play());
-    }
-
-    document.addEventListener("DOMContentLoaded", startup);
 
 
     var countDownDate = new Date("Mar 15, 2022 23:59:59").getTime();
