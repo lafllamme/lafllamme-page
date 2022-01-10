@@ -75,9 +75,9 @@
 
         #text {
             position: absolute;
-            top: 13%;
+            top: 40%;
             left: 50%;
-            font-size: 4.5em;
+            font-size: 3.5em;
             font-family: 'MyWebFont';
             text-align: center;
             transform: translate(-50%, -50%);
@@ -118,12 +118,12 @@
             <div id="text">LOADING</div>
         </div>
         <br>
-        <div style="font-family: 'MyWebFont'; color: white; font-size: 4em; margin-top: 2em;" class="shake-opacity shake-constant">COUNTDOWN</div>
+        <div style="font-family: 'MyWebFont'; color: white; font-size: 3.5em; margin-top: 3.5em;" class="shake-opacity shake-constant">COUNTDOWN</div>
         <button id="start" type="button" style="margin-top: 8em;" class="btn btn-danger btn-lg btn-block">Start</button>
         <ul id="debug"></ul>
     </div>
     <!-- Main Content -->
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" onclick="play()" id="cd">
         <img src="https://i.gifer.com/origin/6a/6af36f7b9c1ac8a7e9d7dbcaa479b616.gif" style=" width: 150px;
   height: auto;" alt="Responsive image">
 
@@ -134,10 +134,10 @@
             <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">HOME</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">MUSIC</a>
+            <a onclick="play()" class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">MUSIC</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">VIDEOS</a>
+            <a onclick="video()" class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">VIDEOS</a>
         </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
@@ -204,11 +204,14 @@
     })
 
 
-    window.addEventListener('scroll', () => {
-        console.log('scroll event fired!')
-    });
+    play = () => {
+        window.location = "https://open.spotify.com/artist/5NxPWcRFOCKAat7bkH6yT7";
 
-    document.getElementById('start').addEventListener('click', function() {
+    }
+    video = () => {
+        window.location = "https://www.youtube.com/channel/UCtJryaBQxg1FNJcB1k4HRhg/videos";
+    }
+    document.getElementById('start').addEventListener('click', () => {
         setTimeout(off, 2000);
     });
 
