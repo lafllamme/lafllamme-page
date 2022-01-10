@@ -35,7 +35,7 @@
 
         html,
         body {
-            background: url('storage/gif.gif');
+            background: url('https://cdn.dribbble.com/users/2425253/screenshots/15306276/media/fb460549827cbfa42a3e5d65556d779c.gif');
             /* Background image is centered vertically and horizontally at all times */
             background-position: center center;
             /* Background image doesn’t tile */
@@ -106,6 +106,7 @@
         .nav-link {
             color: white !important;
         }
+
     </style>
 
 </head>
@@ -123,11 +124,10 @@
         <ul id="debug"></ul>
     </div>
     <!-- Main Content -->
-    <div class="row justify-content-center" onclick="play()" id="cd">
-        <img src="https://i.gifer.com/origin/6a/6af36f7b9c1ac8a7e9d7dbcaa479b616.gif" style=" width: 150px;
-  height: auto;" alt="Responsive image">
+ 
 
-    </div>
+    
+    
     <br>
     <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
         <li class="nav-item">
@@ -165,6 +165,14 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <div class="row justify-content-center" onclick="play()" id="cd">
+        <img src="https://i.gifer.com/origin/6a/6af36f7b9c1ac8a7e9d7dbcaa479b616.gif" style=" width: 150px;
+  height: auto;" alt="Responsive image">
     </div>
     <div id="app"></div>
 
