@@ -77,7 +77,7 @@
             position: absolute;
             top: 13%;
             left: 50%;
-            font-size: 4.5em;
+            font-size: 3.75em;
             font-family: 'MyWebFont';
             text-align: center;
             transform: translate(-50%, -50%);
@@ -118,7 +118,7 @@
             <div id="text">LOADING</div>
         </div>
         <br>
-        <div style="font-family: 'MyWebFont'; color: white; font-size: 4em; margin-top: 2em;" class="shake-opacity shake-constant">COUNTDOWN</div>
+        <div style="font-family: 'MyWebFont'; color: white; font-size: 3.5em; margin-top: 2em;" class="shake-opacity shake-constant">COUNTDOWN</div>
         <button id="start" type="button" style="margin-top: 8em;" class="btn btn-danger btn-lg btn-block">Start</button>
         <ul id="debug"></ul>
     </div>
