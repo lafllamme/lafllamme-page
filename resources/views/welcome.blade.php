@@ -127,7 +127,7 @@
             color: black;
             font-size: 1.5em;
 
-            
+
         }
 
         a#pills-home-tab {
@@ -136,6 +136,17 @@
 
         a#pills-home-tab span {
             color: black;
+        }
+
+        #bigPadge {
+            font-size: 4em;
+        }
+
+        .alert-warning {
+            background-color: #FFE53B;
+            background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%) !important;
+            color: black;
+
         }
     </style>
 
@@ -175,7 +186,7 @@
             <div class="row justify-content-center">
                 <div class="spacer"></div>
                 <div class="alert alert-warning" role="alert">
-                    <p class="text-center"> MORE INFO SOON !
+                    <p id="bigPadge" class="text-center"> MORE INFO SOON !
                     </p>
                 </div>
             </div>
@@ -184,7 +195,7 @@
             <div class="row justify-content-center">
                 <div class="spacer"></div>
                 <div class="alert alert-warning" role="alert">
-                    <p class="text-center"> MORE INFO SOON !
+                    <p id="bigPadge" class="text-center"> MORE INFO SOON !
                     </p>
                 </div>
             </div>
@@ -193,7 +204,7 @@
             <div class="row justify-content-center">
                 <div class="spacer"></div>
                 <div class="alert alert-warning" role="alert">
-                    <p class="text-center"> MORE INFO SOON !
+                    <p id="bigPadge" class="text-center"> MORE INFO SOON !
                     </p>
                 </div>
             </div>
