@@ -97,16 +97,46 @@
 
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
-            background: -webkit-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%) !important;
+            background: url('https://i.gifer.com/origin/10/10923c40ede1fed1af786393dfbba7ea_w200.gif');
             -webkit-background-clip: text;
             background-clip: text;
-            -webkit-text-fill-color: white;
+            -webkit-text-fill-color: black;
+            font-size: 1.5em;
         }
 
         .nav-link {
             color: white !important;
+            background: url('https://i.gifer.com/origin/10/10923c40ede1fed1af786393dfbba7ea_w200.gif');
         }
 
+        #pills-profile-tab {
+            background: url('https://i.pinimg.com/originals/b1/07/66/b1076692adcaf84b1bc10d9bf703fae8.gif');
+        }
+
+        a#pills-profile-tab span {
+            color: black;
+            font-size: 1.5em;
+
+        }
+
+        a#pills-contact-tab {
+            background: url('https://i.pinimg.com/originals/b1/07/66/b1076692adcaf84b1bc10d9bf703fae8.gif');
+        }
+
+        a#pills-contact-tab span {
+            color: black;
+            font-size: 1.5em;
+
+            
+        }
+
+        a#pills-home-tab {
+            background: url('https://i.pinimg.com/originals/b1/07/66/b1076692adcaf84b1bc10d9bf703fae8.gif');
+        }
+
+        a#pills-home-tab span {
+            color: black;
+        }
     </style>
 
 </head>
@@ -124,25 +154,26 @@
         <ul id="debug"></ul>
     </div>
     <!-- Main Content -->
- 
 
-    
-    
+
+
+
     <br>
     <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">HOME</a>
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="color:black;"><span>HOME</span></a>
         </li>
         <li class="nav-item">
-            <a onclick="play()" class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">MUSIC</a>
+            <a onclick="play()" class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><span>MUSIC</span></a>
         </li>
         <li class="nav-item">
-            <a onclick="video()" class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">VIDEOS</a>
+            <a onclick="video()" class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><span>VIDEOS</span></a>
         </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             <div class="row justify-content-center">
+                <div class="spacer"></div>
                 <div class="alert alert-warning" role="alert">
                     <p class="text-center"> MORE INFO SOON !
                     </p>
@@ -151,6 +182,7 @@
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div class="row justify-content-center">
+                <div class="spacer"></div>
                 <div class="alert alert-warning" role="alert">
                     <p class="text-center"> MORE INFO SOON !
                     </p>
@@ -159,6 +191,7 @@
         </div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
             <div class="row justify-content-center">
+                <div class="spacer"></div>
                 <div class="alert alert-warning" role="alert">
                     <p class="text-center"> MORE INFO SOON !
                     </p>
@@ -166,14 +199,14 @@
             </div>
         </div>
     </div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
+
 
     <div class="row justify-content-center" onclick="play()" id="cd">
         <img src="https://i.gifer.com/origin/6a/6af36f7b9c1ac8a7e9d7dbcaa479b616.gif" style=" width: 150px;
   height: auto;" alt="Responsive image">
     </div>
+
+
     <div id="app"></div>
 
 
