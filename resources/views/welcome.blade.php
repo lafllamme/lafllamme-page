@@ -58,7 +58,7 @@
                 <svg viewBox="0 0 512 512" fill="currentColor">
                     <path d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z" />
                 </svg>
-                <img class="profile-img" src="https://i.imgur.com/c5Mw0Or.png" alt="">
+                <img class="profile-img" onclick="location.href='https://www.instagram.com/lafllamme/'" src="https://i.imgur.com/c5Mw0Or.png" alt="">
             </div>
         </div>
         <div class="wrapper">
@@ -184,7 +184,7 @@
                     <div class="header-menu">
                         <a class="main-header-link is-active" href="#">Home</a>
                         <a class="main-header-link" href="#">Forum</a>
-                        <a class="main-header-link" href="#">Spotify</a>
+                        <a class="main-header-link" href="https://spoti.fi/3L84OPL">Spotify</a>
 
                     </div>
                 </div>
@@ -196,12 +196,12 @@
                                 Album is planned
                             </h3>
                             <div class="content-text">Lafllamme is currently working on a debut project, time to drop baby!</div>
-                            <button class="content-button">More Info</button>
+                            <button class="content-button" onclick="location.href='https://spoti.fi/3L84OPL'">More Info</button>
                         </div>
                         <img class="content-wrapper-img" src="https://assets.codepen.io/3364143/glass.png" alt="">
                     </div>
                     <div class="content-section">
-                        <div class="content-section-title">Project Contents</div>
+                        <div class="content-section-title">Project Status</div>
                         <ul>
                             <li class="adobe-product">
                                 <div class="products">
@@ -212,7 +212,7 @@
                                     <span class="status-circle green"></span>
                                     Working...</span>
                                 <div class="button-wrapper">
-                                    <button class="content-button status-button">Open</button>
+                                    <button class="content-button status" onclick="location.href='https://spoti.fi/3L84OPL'">Open</button>
                                     <div class="menu">
                                         <button class="dropdown">
                                             <ul>
@@ -267,20 +267,20 @@
                                 <div class="button-wrapper">
                                     <button class="content-button status-button">Reference</button>
                                     <div class="pop-up">
-                                        <div class="pop-up__title">We are working on it ...
+                                        <div class="pop-up__title">Bald gibt es updates ...
                                             <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
                                                 <circle cx="12" cy="12" r="10" />
                                                 <path d="M15 9l-6 6M9 9l6 6" />
                                             </svg>
                                         </div>
-                                        <div class="pop-up__subtitle">Adjust your selections for advanced options as desired before continuing. <a href="#">Learn more</a></div>
+                                        <div class="pop-up__subtitle">Wir planen momentan alles ein und veröffentlichen bald mehr Infos. <a href="https://www.instagram.com/lafllamme/">Solange kannst du dich hier informieren</a></div>
                                         <div class="checkbox-wrapper">
                                             <input type="checkbox" id="check1" class="checkbox">
-                                            <label for="check1">Import previous settings and preferences</label>
+                                            <label for="check1">Ich habe die neusten Videos abgecheckt</label>
                                         </div>
                                         <div class="checkbox-wrapper">
                                             <input type="checkbox" id="check2" class="checkbox">
-                                            <label for="check2">Remove old versions</label>
+                                            <label for="check2">Ich folg Lafllame auf Spotify</label>
                                         </div>
                                         <div class="content-button-wrapper">
                                             <button class="content-button status-button open close">Cancel</button>
@@ -300,7 +300,7 @@
                             </li>
                             <li class="adobe-product">
                                 <div class="products">
-                                    <img src="https://help.apple.com/assets/5F9AFA230946224327006583/5F9AFA2F094622432700659B/de_DE/390711ce08c61bf054d3dc4dfb9080ae.png" width="35" height="35" style="margin-right: 15px;  margin-left: -5px;" > Logic Pro X
+                                    <img src="https://help.apple.com/assets/5F9AFA230946224327006583/5F9AFA2F094622432700659B/de_DE/390711ce08c61bf054d3dc4dfb9080ae.png" width="35" height="35" style="margin-right: 15px;  margin-left: -5px;"> Logic Pro X
                                 </div>
                                 <span class="status">
                                     <span class="status-circle green"></span>
@@ -347,53 +347,86 @@
                         </ul>
                     </div>
                     <div class="content-section">
-                        <div class="content-section-title">Apps in your plan</div>
+                        <div class="content-section-title">Letzen News...</div>
                         <div class="apps-card">
                             <div class="app-card">
                                 <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg" d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z" fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z" fill="#f6e7fa" data-original="#e1bee7" />
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20pt" height="20pt" viewBox="0 0 465.000000 537.000000" preserveAspectRatio="xMidYMid meet">
+
+                                        <g transform="translate(0.000000,537.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+                                            <path d="M2230 5128 c-24 -13 -58 -40 -74 -61 l-31 -39 -5 -180 -5 -181 -102
+                                                -23 c-352 -79 -678 -303 -879 -604 -112 -169 -199 -390 -224 -568 -5 -42 -14
+                                                -333 -20 -647 -10 -617 -11 -622 -72 -800 -109 -319 -341 -609 -622 -775 -42
+                                                -25 -75 -49 -73 -55 1 -5 29 -61 62 -122 l60 -113 2080 0 2080 0 60 111 c33
+                                                62 61 117 63 123 1 6 -23 26 -55 45 -292 171 -527 458 -641 783 -61 173 -63
+                                                187 -72 763 -5 292 -11 568 -15 615 -17 225 -114 481 -263 690 -119 166 -323
+                                                338 -516 434 -127 63 -198 88 -345 122 -57 12 -105 25 -108 28 -2 2 -7 73 -10
+                                                158 -6 190 -13 216 -62 261 -66 59 -139 71 -211 35z m-215 -901 c42 -42 51
+                                                -74 32 -120 -16 -38 -18 -39 -147 -113 -106 -61 -258 -209 -310 -302 -70 -125
+                                                -90 -152 -124 -169 -31 -14 -39 -15 -72 -2 -49 19 -79 60 -78 107 2 73 121
+                                                267 232 380 82 83 173 150 280 204 112 58 142 60 187 15z" />
+                                            <path d="M1787 738 c3 -24 16 -76 29 -116 104 -316 455 -462 754 -314 148 73
+                                                290 285 290 434 l0 38 -539 0 -539 0 5 -42z" />
                                         </g>
-                                    </svg>
-                                    Premiere Pro
+                                    </svg> Videodreh Berlin
                                 </span>
-                                <div class="app-card__subtext">Edit, master and create fully proffesional videos</div>
+                                <div class="app-card__subtext">Für die letzten Songs wird in Berlin gedreht</div>
                                 <div class="app-card-buttons">
-                                    <button class="content-button status-button">Update</button>
+                                    <button class="content-button status-button">{{date('l/M/y')}}</button>
                                     <div class="menu"></div>
                                 </div>
                             </div>
                             <div class="app-card">
                                 <span>
-                                    <svg viewBox="0 0 52 52" style="border: 1px solid #c1316d">
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z" fill="#2f0015" data-original="#6f2b41" />
-                                            <path d="M18.08 39H15.2V13.72l-2.64-.08V11h5.52v28zM27.68 19.4c1.173-.507 2.593-.761 4.26-.761s3.073.374 4.22 1.12V11h2.88v28c-2.293.32-4.414.48-6.36.48-1.947 0-3.707-.4-5.28-1.2-2.08-1.066-3.12-2.92-3.12-5.561v-7.56c0-2.799 1.133-4.719 3.4-5.759zm8.48 3.12c-1.387-.746-2.907-1.119-4.56-1.119-1.574 0-2.714.406-3.42 1.22-.707.813-1.06 1.847-1.06 3.1v7.12c0 1.227.44 2.188 1.32 2.88.96.719 2.146 1.079 3.56 1.079 1.413 0 2.8-.106 4.16-.319V22.52z" fill="#e1c1cf" data-original="#ff70bd" />
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20pt" height="20pt" viewBox="0 0 465.000000 537.000000" preserveAspectRatio="xMidYMid meet">
+                                        <g transform="translate(0.000000,537.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+                                            <path d="M2230 5128 c-24 -13 -58 -40 -74 -61 l-31 -39 -5 -180 -5 -181 -102
+                                                -23 c-352 -79 -678 -303 -879 -604 -112 -169 -199 -390 -224 -568 -5 -42 -14
+                                                -333 -20 -647 -10 -617 -11 -622 -72 -800 -109 -319 -341 -609 -622 -775 -42
+                                                -25 -75 -49 -73 -55 1 -5 29 -61 62 -122 l60 -113 2080 0 2080 0 60 111 c33
+                                                62 61 117 63 123 1 6 -23 26 -55 45 -292 171 -527 458 -641 783 -61 173 -63
+                                                187 -72 763 -5 292 -11 568 -15 615 -17 225 -114 481 -263 690 -119 166 -323
+                                                338 -516 434 -127 63 -198 88 -345 122 -57 12 -105 25 -108 28 -2 2 -7 73 -10
+                                                158 -6 190 -13 216 -62 261 -66 59 -139 71 -211 35z m-215 -901 c42 -42 51
+                                                -74 32 -120 -16 -38 -18 -39 -147 -113 -106 -61 -258 -209 -310 -302 -70 -125
+                                                -90 -152 -124 -169 -31 -14 -39 -15 -72 -2 -49 19 -79 60 -78 107 2 73 121
+                                                267 232 380 82 83 173 150 280 204 112 58 142 60 187 15z" />
+                                            <path d="M1787 738 c3 -24 16 -76 29 -116 104 -316 455 -462 754 -314 148 73
+                                                    290 285 290 434 l0 38 -539 0 -539 0 5 -42z" />
                                         </g>
                                     </svg>
-                                    InDesign
+                                    Cover fertig
                                 </span>
-                                <div class="app-card__subtext">Design and publish great projects & mockups</div>
+                                <div class="app-card__subtext">Das Cover wurde jetzt nochmal überarbeitet</div>
                                 <div class="app-card-buttons">
-                                    <button class="content-button status-button">Update</button>
+                                    <button class="content-button status-button">{{date('l/M/y')}}</button>
                                     <div class="menu"></div>
                                 </div>
                             </div>
                             <div class="app-card">
                                 <span>
-                                    <svg viewBox="0 0 52 52" style="border: 1px solid #C75DEB">
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z" fill="#3a3375" data-original="#3a3375" />
-                                            <path d="M27.44 39H24.2l-2.76-9.04h-8.32L10.48 39H7.36l8.24-28h3.32l8.52 28zm-6.72-12l-3.48-11.36L13.88 27h6.84zM31.48 33.48c0 2.267 1.333 3.399 4 3.399 1.653 0 3.466-.546 5.44-1.64L42 37.6c-2.054 1.254-4.2 1.881-6.44 1.881-4.64 0-6.96-1.946-6.96-5.841v-8.2c0-2.16.673-3.841 2.02-5.04 1.346-1.2 3.126-1.801 5.34-1.801s3.94.594 5.18 1.78c1.24 1.187 1.86 2.834 1.86 4.94V30.8l-11.52.6v2.08zm8.6-5.24v-3.08c0-1.413-.44-2.42-1.32-3.021-.88-.6-1.907-.899-3.08-.899-1.174 0-2.167.359-2.98 1.08-.814.72-1.22 1.773-1.22 3.16v3.199l8.6-.439z" fill="#e4d1eb" data-original="#e7adfb" />
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20pt" height="20pt" viewBox="0 0 465.000000 537.000000" preserveAspectRatio="xMidYMid meet">
+
+                                        <g transform="translate(0.000000,537.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+                                            <path d="M2230 5128 c-24 -13 -58 -40 -74 -61 l-31 -39 -5 -180 -5 -181 -102
+                                                -23 c-352 -79 -678 -303 -879 -604 -112 -169 -199 -390 -224 -568 -5 -42 -14
+                                                -333 -20 -647 -10 -617 -11 -622 -72 -800 -109 -319 -341 -609 -622 -775 -42
+                                                -25 -75 -49 -73 -55 1 -5 29 -61 62 -122 l60 -113 2080 0 2080 0 60 111 c33
+                                                62 61 117 63 123 1 6 -23 26 -55 45 -292 171 -527 458 -641 783 -61 173 -63
+                                                187 -72 763 -5 292 -11 568 -15 615 -17 225 -114 481 -263 690 -119 166 -323
+                                                338 -516 434 -127 63 -198 88 -345 122 -57 12 -105 25 -108 28 -2 2 -7 73 -10
+                                                158 -6 190 -13 216 -62 261 -66 59 -139 71 -211 35z m-215 -901 c42 -42 51
+                                                -74 32 -120 -16 -38 -18 -39 -147 -113 -106 -61 -258 -209 -310 -302 -70 -125
+                                                -90 -152 -124 -169 -31 -14 -39 -15 -72 -2 -49 19 -79 60 -78 107 2 73 121
+                                                267 232 380 82 83 173 150 280 204 112 58 142 60 187 15z" />
+                                            <path d="M1787 738 c3 -24 16 -76 29 -116 104 -316 455 -462 754 -314 148 73
+                                                290 285 290 434 l0 38 -539 0 -539 0 5 -42z" />
                                         </g>
                                     </svg>
-                                    After Effects
-                                </span>
-                                <div class="app-card__subtext">Industry Standart motion graphics & visual effects</div>
+                                    Neues Studio </span>
+                                <div class="app-card__subtext">Wir sind umgezogen und haben neue Räumlichkeiten! Reboot</div>
                                 <div class="app-card-buttons">
-                                    <button class="content-button status-button">Update</button>
+                                    <button class="content-button status-button">{{date('l/M/y')}}</button>
                                     <div class="menu"></div>
                                 </div>
                             </div>
